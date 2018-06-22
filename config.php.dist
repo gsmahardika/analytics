@@ -1,0 +1,6 @@
+<?php
+
+return [
+    'view_id' => '',
+    'credentials' => __DIR__.'/credentials.json'
+];
