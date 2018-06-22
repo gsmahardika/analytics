@@ -1,6 +1,6 @@
 <?php
 
-namespace AgungMaxsol\Analytics;
+namespace Agung\Analytics;
 
 class Analytics
 {

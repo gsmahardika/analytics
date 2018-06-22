@@ -1,6 +1,6 @@
 <?php
 
-namespace AgungMaxsol\Analytics;
+namespace Agung\Analytics;
 
 use Google_Service_Analytics;
 use League\Flysystem\Filesystem;

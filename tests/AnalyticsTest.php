@@ -1,10 +1,10 @@
 <?php
 
-namespace AgungMaxsol\Analytics\Tests;
+namespace Agung\Analytics\Tests;
 
-use AgungMaxsol\Analytics\Analytics;
-use AgungMaxsol\Analytics\AnalyticsClient;
-use AgungMaxsol\Analytics\AnalyticsClientFactory;
+use Agung\Analytics\Analytics;
+use Agung\Analytics\AnalyticsClient;
+use Agung\Analytics\AnalyticsClientFactory;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -59,7 +59,7 @@ class AnalyticsTest extends TestCase
             $this->period->startDate,
             $this->period->endDate,
             'ga:users,ga:pageviews',
-            ['dimensions' => 'ga:date'],
+            ['dimensions' => 'ga:date']
         ];
 
         $this->client
@@ -135,6 +135,7 @@ class AnalyticsTest extends TestCase
 
     public function testFetchTopBrowsers()
     {
+        $maxResults = 3;
         $expectedArguments = [
             $this->viewId,
             $this->period->startDate,
@@ -156,10 +157,10 @@ class AnalyticsTest extends TestCase
                     ['Browser 3', '30'],
                     ['Browser 4', '20'],
                     ['Browser 1', '10']
-                ],
+                ]
             ]);
 
-        $response = $this->analytics->fetchTopBrowsers($this->period, 3);
+        $response = $this->analytics->fetchTopBrowsers($this->period, $maxResults);
 
         $this->assertEquals([
             ['browser' => 'Browser 1', 'sessions' => 100],

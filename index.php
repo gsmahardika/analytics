@@ -1,8 +1,8 @@
 <?php
 
-use AgungMaxsol\Analytics\Analytics;
-use AgungMaxsol\Analytics\AnalyticsClient;
-use AgungMaxsol\Analytics\AnalyticsClientFactory;
+use Agung\Analytics\Analytics;
+use Agung\Analytics\AnalyticsClient;
+use Agung\Analytics\AnalyticsClientFactory;
 
 require __DIR__.'/vendor/autoload.php';
 

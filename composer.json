@@ -1,5 +1,5 @@
 {
-    "name": "agung-maxsol/analytics",
+    "name": "gsmahardika/analytics",
     "description": "A package to retrieve Google Analytics data.",
     "keywords": [
         "google",
@@ -7,13 +7,13 @@
         "retrieve",
         "reports"
     ],
-    "homepage": "https://github.com/agung-maxsol/analytics",
+    "homepage": "https://github.com/gsmahardika/analytics",
     "license": "MIT",
     "authors": [
         {
-            "name": "Agung Mahardika",
-            "email": "agung.mahardika@maxsol.id",
-            "homepage": "https://maxsol.id",
+            "name": "Gs Mahardika",
+            "email": "gs.mahardika@gmail.com",
+            "homepage": "http://gsmahardika.web.id",
             "role": "Developer"
         }
     ],
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-          "AgungMaxsol\\Analytics\\": "src/"
+          "Agung\\Analytics\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AgungMaxsol\\Analytics\\Tests\\": "tests/"
+            "Agung\\Analytics\\Tests\\": "tests/"
         }
     },
     "config": {
