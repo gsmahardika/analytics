@@ -17,9 +17,13 @@ class AnalyticsTest extends TestCase
 
     public function setUp()
     {
+        $today = date('Y-m-d');
+        $startDate = new \DateTime($today);
+        $endDate = new \DateTime($today);
+
         $period = new \stdClass;
-        $period->startDate = new \DateTime('2017-04-01');
-        $period->endDate = new \DateTime('2017-04-30');
+        $period->startDate = $startDate->modify('first day of this month');
+        $period->endDate = $endDate->modify('last day of this month');
 
         $this->viewId = '1234567';
         $this->client = Mockery::mock(AnalyticsClient::class);
