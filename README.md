@@ -2,6 +2,8 @@
 
 Inspired by [spatie/laravel-analytics](https://github.com/spatie/laravel-analytics) with some modification.
 
+If I violate something, please let me know. Thank you.
+
 ## How to obtain the credentials to communicate with Google Analytics
 
 ### Getting credentials
