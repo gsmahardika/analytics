@@ -176,7 +176,7 @@ class Analytics
 
         $count = count($data);
 
-        if ($count <= $maxResults || $maxResults < 1) {
+        if ($count <= $maxResults || $maxResults === 0) {
             return $data;
         }
 

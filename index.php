@@ -8,7 +8,10 @@ require __DIR__.'/vendor/autoload.php';
 
 $config = require __DIR__.'/config.php';
 $factory = new AnalyticsClientFactory($config);
-$client = new AnalyticsClient($factory->getService());
+
+$client = new AnalyticsClient($factory->getService(), $factory->getCache());
+$client->setCacheLifeTime($config['cache_lifetime']);
+
 $analytics = new Analytics($client, $config['view_id']);
 
 $period = new \stdClass;

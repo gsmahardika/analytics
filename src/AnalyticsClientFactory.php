@@ -4,6 +4,8 @@ namespace AgungMaxsol\Analytics;
 
 use Google_Client;
 use Google_Service_Analytics;
+use League\Flysystem\Adapter\Local;
+use League\Flysystem\Filesystem;
 
 class AnalyticsClientFactory
 {
@@ -21,5 +23,12 @@ class AnalyticsClientFactory
         $client->setAuthConfig($this->config['credentials']);
 
         return new Google_Service_Analytics($client);
+    }
+
+    public function getCache()
+    {
+        $adapter = new Local($this->config['cache_path']);
+
+        return new Filesystem($adapter);
     }
 }

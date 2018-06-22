@@ -2,5 +2,7 @@
 
 return [
     'view_id' => '',
-    'credentials' => __DIR__.'/credentials.json'
+    'credentials' => __DIR__.'/credentials.json',
+    'cache_path' => __DIR__.'/cache',
+    'cache_lifetime' => 60 * 24 // In minutes
 ];

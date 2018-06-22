@@ -34,7 +34,7 @@ See [index.php](index.php) file.
 
 ## Todo
 
-- Cache results
+[x] Cache results
 
 ## Testing
 
