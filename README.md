@@ -32,6 +32,8 @@ The last thing you'll have to do is fill in the `view_id` in the config file. Yo
 
 See [index.php](index.php) file.
 
+Use [config](config.php.dist) as the initial configuration and fill any details you wish to change.
+
 ## Todo
 
 - [x] Cache results
