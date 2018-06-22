@@ -194,7 +194,7 @@ class Analytics
 
         $data[] = [
             'browser' => 'Others',
-            'sessions' => $sessions
+            'sessions' => (int) $sessions
         ];
 
         return array_values($data);
