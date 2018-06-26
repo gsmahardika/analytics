@@ -59,7 +59,7 @@ class AnalyticsTest extends TestCase
             $this->period->startDate,
             $this->period->endDate,
             'ga:users,ga:pageviews',
-            ['dimensions' => 'ga:date'],
+            ['dimensions' => 'ga:date']
         ];
 
         $this->client
