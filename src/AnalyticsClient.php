@@ -89,6 +89,6 @@ class AnalyticsClient
 
     protected function determineCacheName(array $properties)
     {
-        return 'analytics.'.md5(serialize($properties));
+        return 'analytics.'.md5(serialize($properties)).'.cache';
     }
 }
